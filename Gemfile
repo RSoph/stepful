@@ -20,6 +20,7 @@ gem "cssbundling-rails"
 gem "jbuilder"
 
 gem 'react-rails' 
+gem 'webpacker', '~> 2.0'
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
 
