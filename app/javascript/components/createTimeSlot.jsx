@@ -1,4 +1,3 @@
-
 export function createTimeSlot(data) {
     return fetch('/timeslot', {
         method: 'POST',

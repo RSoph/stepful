@@ -1,4 +1,3 @@
-
 export function getCoachesAll(data) {
     return fetch('/coaches', {
         method: 'GET',
@@ -8,9 +7,7 @@ export function getCoachesAll(data) {
         }
     }).then(response => {
         if (response.status >= 200 && response.status < 300) {
-            return response;
-            console.log(response);
-            window.location.reload();
+            setCoachesAll(response.json)
           } else {
            console.log('Somthing happened wrong');
           }
