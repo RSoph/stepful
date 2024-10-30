@@ -15,13 +15,14 @@ const Coach = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(`Form submitted, ${dateTime}`);
-    createTimeSlot(coach.name, dateTime);
+    var data = {"coach_name": coach.name, "timeslot": dateTime}
+    console.log(data)
+    createTimeSlot(data);
     // this.props.history.push(`timeslot/${dateTime}`)
   }
 
   useEffect(() => {
-    const url = `/coach/${params.initial}`;
+    const url = `/coach/${params.id}`;
     fetch(url)
       .then((response) => {
         if (response.ok) {
@@ -31,7 +32,7 @@ const Coach = () => {
       })
       .then((response) => setCoach(response))
       .catch(() => navigate("/"));
-  }, [params.initial]);
+  }, [params.id]);
 
   return (
     <div>

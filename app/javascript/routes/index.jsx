@@ -7,7 +7,7 @@ export default (
   <Router basename="/">
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/coach/:initial" element={<Coach />} />
+      <Route path="/coach/:id" element={<Coach />} />
     </Routes>
   </Router>
 );

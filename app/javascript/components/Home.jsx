@@ -3,18 +3,18 @@ import { Link, useNavigate } from "react-router-dom";
 import Select from "react-dropdown-select";
 
 const coaches = [
-    {value: "coach/a", label: "Alice"},
-    {value: "coach/b", label: "Brian"},
-    {value: "coach/c", label: "Charlene"},
-    {value: "coach/d", label: "David"}
+    {value: "coach/1", label: "Alice"},
+    {value: "coach/2", label: "Brian"},
+    {value: "coach/3", label: "Charlene"},
+    {value: "coach/4", label: "David"}
 
   ];
 
 const students = [
-    {value: "student/e", label: "Edward"},
-    {value: "student/f", label: "Francine"},
-    {value: "student/g", label: "Gerald"},
-    {value: "student/h", label: "Harriet"}
+    {value: "student/1", label: "Edward"},
+    {value: "student/2", label: "Francine"},
+    {value: "student/3", label: "Gerald"},
+    {value: "student/4", label: "Harriet"}
   ];
 
 export default () => (

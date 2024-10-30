@@ -1,7 +1,10 @@
 class CoachController < ApplicationController
 
+	def index
+	end
+
 	def show
-		coach = Coach.search_by_initial(params["initial"])
-		render json: coach
+		@coach = Coach.includes(:timeslots).find(params["id"])
+		render json: @coach
 	end
 end

@@ -1,6 +1,7 @@
 class Coach < ApplicationRecord
+  has_many :timeslots
 
-  def self.search_by_initial(intial)
-    self.where("lower(name) LIKE '#{intial.downcase}%'").first
+  def self.find_by_name(name)
+    self.where("lower(name) LIKE '#{name.downcase}%'").first
   end
 end

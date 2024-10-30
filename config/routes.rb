@@ -3,8 +3,8 @@ Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   get 'users/index' => 'home#index'
-  get 'coach/:initial' => 'coach#show'
-  get 'student/:initial' => 'student#show'
+  get 'coach/:id' => 'coach#show'
+  get 'student/:id' => 'student#show'
   post 'timeslot/' => 'timeslot#create'
 
   root 'homepage#index'

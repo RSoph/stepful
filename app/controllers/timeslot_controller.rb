@@ -4,7 +4,9 @@ class TimeslotController < ApplicationController
   def create
   	puts("-----------------")
   	puts(params)
-    timeslot = Timeslot.create!(params)
+  	coach = Coach.find_by_name(params["coach_name"])
+  	timeslot_data = {coach: coach, start_time: params["timeslot"]}
+    timeslot = Timeslot.create!(timeslot_data)
     if timeslot
       render json: timeslot
     else
