@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate, useParams} from "react-router-dom";
+import { createTimeSlot } from './createTimeSlot';
+
 
 const Coach = () => {
   const params = useParams();
@@ -14,6 +16,8 @@ const Coach = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(`Form submitted, ${dateTime}`);
+    createTimeSlot(coach.name, dateTime);
+    // this.props.history.push(`timeslot/${dateTime}`)
   }
 
   useEffect(() => {

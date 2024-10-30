@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get 'users/index' => 'home#index'
   get 'coach/:initial' => 'coach#show'
   get 'student/:initial' => 'student#show'
+  post 'timeslot/' => 'timeslot#create'
 
   root 'homepage#index'
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
