@@ -21,7 +21,7 @@ gem "jbuilder"
 
 gem 'psych', '< 4.0.0'
 gem 'react-rails' 
-gem 'webpacker', '~> 2.0'
+gem 'webpacker', '~> 5.4'
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
 
