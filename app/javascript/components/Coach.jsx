@@ -18,7 +18,6 @@ const Coach = () => {
     var data = {"coach_name": coach.name, "timeslot": dateTime}
     console.log(data)
     createTimeSlot(data);
-    // this.props.history.push(`timeslot/${dateTime}`)
   }
 
   useEffect(() => {

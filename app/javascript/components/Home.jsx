@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Select from "react-dropdown-select";
+import { getCoachesAll } from './getCoachesAll';
+
 
 const coaches = [
     {value: "coach/1", label: "Alice"},
@@ -16,6 +18,8 @@ const students = [
     {value: "student/3", label: "Gerald"},
     {value: "student/4", label: "Harriet"}
   ];
+
+const coachesAll = getCoachesAll();
 
 export default () => (
   <div className="vw-100 vh-100 primary-color d-flex align-items-center justify-content-center">

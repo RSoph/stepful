@@ -1,6 +1,7 @@
 class CoachController < ApplicationController
 
 	def index
+		render json: Coach.all()
 	end
 
 	def show
