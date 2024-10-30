@@ -21,7 +21,12 @@ const Coach = () => {
 
   return (
     <div>
-      <p>HI!</p>
+      <p>HI {coach.name}!</p>
+      <p>Here are your upcoming timeslots:</p>
+      <p>Create a new timeslot here by giving us a start time for it:</p>
+      <input aria-label="Date and time" type="datetime-local" />
+
+      <p>Here are your past timeslots:</p>
     </div>
   )
 };
