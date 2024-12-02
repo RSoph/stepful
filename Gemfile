@@ -19,7 +19,7 @@ gem "cssbundling-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
-gem 'psych', '< 4.0.0'
+gem 'psych', '< 6.0.0'
 gem 'react-rails' 
 gem 'webpacker', '~> 2.0'
 # Use Redis adapter to run Action Cable in production
